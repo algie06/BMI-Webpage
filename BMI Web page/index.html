@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BMI Webpage</h1>
+    </header>
+    
+    <section>
+        <form action="######" method="post">
+            <div class="gendercon">
+                <label for="gender">Select a gender</label>
+                <input type="radio" name="radio" id="gender" value="male">Male
+                <input type="radio" name="radio" id="gender" value="female">Female
+            </div>
+            <div class="ageinAndagecat">
+                <div class="ageContianer">
+                    <label for="ageCat">Select a age category:</label>
+                    <select name="ageCat" id="ageCat" disabled required>
+                        <option value="">Select one</option>
+                        <option value="Child">Child [1-16]years</option>
+                        <option value="Young adult">Young adult [17-30]years</option>
+                        <option value="Middle aged">Middle aged adults [31-45]years</option>
+                        <option value="Old aged adults">Old aged adults [46 and above]</option>
+                    </select>
+                </div>
+    
+                <div class="ageinput">
+                    <label for="age">Enter your age:</label>
+                    <input type="number" name="ageNum" id="age" placeholder="" min="0" max="200" value="0" required disabled> 
+                </div>
+            </div>
+            
+           <div class="weightHeightBtnCon">
+                <div class="unitsOfHandW">
+                    <label for="weightCat">Units:</label>
+                    <select name="weightCat" id="WeightAndHeightCat" disabled required>
+                        <option value="">Select one</option>
+                        <option value="standard">Standard</option>
+                        <option value="metric">Metric</option>
+                    </select>
+                </div>
+
+                <div class="hAndwcon">
+                    <label for="weight">Enter your weight:</label>
+                    <input type="number" name="weightNum" id="weight" placeholder="weight" min="0" max="500"  required disabled>
+
+                    <label for="age">Enter your height:</label>
+                    <input type="number" name="heightNum" id="height" placeholder="height" min="0" max="500" required disabled>
+                </div>
+
+            <div id="btn">
+                <input type="button" value="Calculate" id="button" onclick="btnResult()">
+            </div>
+        </form>
+        
+        <div id="resultCon">
+            <h2>Result Here:</h2>
+            <p id="Result"></p>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
