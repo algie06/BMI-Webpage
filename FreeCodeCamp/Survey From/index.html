@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Enter your name: <input type="text" name="uname" id="name" placeholder="Enter your name" required></label>
+
+        <label for="email" id="email-label">Enter your email: <input type="email" name="uemail" id="email" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" placeholder="Enter your email" required></label>
+
+        <label for="umber" id="number-label">Enter your number: <input type="number" name="unumber" id="number" min="0" max="10" placeholder="Enter a number"></label>
+
+        <label for="dropdown">Select an option to rate us</label>
+        <select name="" id="dropdown">
+            <option value="notGood" >Not good</option>
+            <option value="good">Good</option>
+            <option value="verygood">Very good</option>
+            <option value="excellent" selected>Excellent</option>
+        </select>
+
+        <label for="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+        <input type="radio" name="radio" id="radio-label" value="definitely" class="inline" checked>Definitely
+        <input type="radio" name="radio" id="radio-label" value="maybe" class="inline">Maybe
+        <input type="radio" name="radio" id="radio-label" value="notSure" class="inline">Not sure
+
+
+        <label for="checkbox-label">What is your favorite feature of freeCodeCamp?</label>
+        <input type="checkbox" name="checkbox" id="checkbox-label" value="challenges"class="inline" checked>Challenges
+        <input type="checkbox" name="checkbox" id="checkbox-label" value="projects" class="inline">Projects
+        <input type="checkbox" name="checkbox" id="checkbox-label" value="community" class="inline">Community
+        <input type="checkbox" name="checkbox" id="checkbox-label" value="openSource" class="inline">Open Source
+
+        <label for="comment-label">Any comments or suggestions?</label>
+        <textarea name="comment" id="comment-label" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+</body>
+</html>
